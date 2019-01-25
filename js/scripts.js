@@ -4,7 +4,7 @@
 function getNumber(userInput) {
   var output = [];
   // debugger;
-  for (var i = userInput; i >= 0 ; i = --userInput ) {
+  for (var i = 0; i <= userInput ; i++) {
     output.push(i);
     console.log(output);
   }
