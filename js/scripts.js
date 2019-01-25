@@ -1,18 +1,19 @@
 // * BUSINESS LOGIC
-function beepboop(userInput) {
-  function getNumber(userInput) {
-    var nums = [];
-    // debugger;
-    for (var i = 0; i <= userInput ; i++) {
-      nums.push(" " + i);
-      console.log(nums);
-    }
-    return nums;
-  };
+function getNumber(userInput) {
+  var nums = [];
+  // debugger;
+  for (var i = 0; i <= userInput ; i++) {
+    nums.push(" " + i);
+    console.log(nums);
+  }
+  return nums;
+};
 
+function beepboop(userInput) {
   var nums = getNumber(userInput);
-    debugger;
+  // debugger;
   var transformNums = nums.map(function(num) {
+    // return getNumber(userInput);
     if (num.includes("3")) {
       num = "I'm sorry, Dave. I'm afraid I can't do that.";
     } else if (num.includes("2")) {
@@ -21,8 +22,11 @@ function beepboop(userInput) {
       num = "Beep!";
     } else {
     }
+    console.log(num);
+
     return num;
   });
+
 };
 
 
@@ -39,7 +43,7 @@ $(document).ready(function(){
     // var output = beepboop(nums);
     var output = beepboop(userInput);
 
-    $(".result").text(output);
+    $("p.result").text(output);
   });
 
   $("button#redo").click(function(){
