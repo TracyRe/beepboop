@@ -17,11 +17,11 @@ function beepboop(userInput) {
   // debugger;
   var transformNums = nums.map(function(num) {
     if (num.includes("3")) {
-      num = "I'm sorry, Dave. I'm afraid I can't do that.";
+      num = " I'm sorry, Dave. I'm afraid I can't do that.";
     } else if (num.includes("2")) {
-      num = "Boop!";
+      num = " Boop!";
     } else if (num.includes("1")) {
-      num = "Beep!";
+      num = " Beep!";
     } else {
     }
     console.log(num);
