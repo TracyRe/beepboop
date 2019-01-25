@@ -40,6 +40,11 @@ Higher numbered rules take precedence over lower numbered rules | "13" | "I'm so
 When the user enters a new number, the application will replace the current result with new results | **Current:** "4" | "0, Beep!, Boop!, 3, 4"
  | **New:** "3" | "0, Beep!, Boop!, 3"
 
+
+### Stretch Goals
+
+* Let user enter name, return user name in place of "Dave"
+
 ## Setup/Installation Requirements
 
 * View at https://tracyre.github.io/beepboop/

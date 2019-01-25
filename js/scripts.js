@@ -14,10 +14,18 @@ function getNumber(userInput) {
 // *TRANSFORMS NUMBERS: 1 = BEEP, 2 = BOOP, 3 = I'M SORRY DAVE
 function beepboop(userInput) {
   var nums = getNumber(userInput);
+  var name = function getName(userName) {
+    if (userName !== "") {
+      name = userName;
+    } else {
+      name = "Dave";
+    }
+    return name;
+  };
   // debugger;
   var transformNums = nums.map(function(num) {
     if (num.includes("3")) {
-      num = " I'm sorry, Dave. I'm afraid I can't do that.";
+      num = " I'm sorry, " + name + ". I'm afraid I can't do that.";
     } else if (num.includes("2")) {
       num = " Boop!";
     } else if (num.includes("1")) {
@@ -39,6 +47,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userInput = parseInt($("input#userInput").val());
+    var userName = $("input#userName").val();
     var output = beepboop(userInput);
     console.log(output);
     // var output = "text goes here";
