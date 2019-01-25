@@ -8,6 +8,7 @@ function getNumber(userInput) {
     output.push(i);
     console.log(output);
   }
+  return output;
 };
 
 
@@ -24,7 +25,7 @@ $(document).ready(function(){
     event.preventDefault();
 
     var userInput = parseInt($("input#userInput").val());
-    var output = getNumber(userInput)
+    var output = getNumber(userInput);
 
 
     $(".result").text(output);
