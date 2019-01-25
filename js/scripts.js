@@ -1,16 +1,34 @@
+// * BUSINESS LOGIC
+
+
+function getNumber(userInput) {
+  var output = [];
+  // debugger;
+  for (var i = userInput; i > 1 ; i = --userInput ) {
+    console.log(output);
+    output.push(i);
+    return output;
+  }
+};
+
+
+
+
+
+
+
+
+
+// * UI LOGIC
 $(document).ready(function(){
-  $("#factorial").submit(function(event){
+  $("form#beepboop").submit(function(event){
     event.preventDefault();
 
     var userInput = parseInt($("input#userInput").val());
-    var output = [];
-    for (var i = userInput; i > 1 ; i = --userInput ) {
-      output.push(i);
-    }
-    console.log(output);
+    var output = getNumber(userInput)
 
 
-    $(".result").text(result);
+    $(".result").text(output);
 
   });
 
