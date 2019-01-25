@@ -4,10 +4,9 @@
 function getNumber(userInput) {
   var output = [];
   // debugger;
-  for (var i = userInput; i > 1 ; i = --userInput ) {
-    console.log(output);
+  for (var i = userInput; i >= 0 ; i = --userInput ) {
     output.push(i);
-    return output;
+    console.log(output);
   }
 };
 
