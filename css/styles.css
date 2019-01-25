@@ -1,0 +1,15 @@
+.form-control {
+  padding: 10px 20px 10px 20px;
+  /* border: 1px solid #f0f; */
+  height: auto;
+  width: auto;
+}
+
+.output {
+  font-size: 120%;
+  height: 70px;
+}
+
+.output p {
+  padding: 0;
+}
