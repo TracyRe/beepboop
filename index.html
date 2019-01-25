@@ -5,18 +5,25 @@
     <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all">
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Beep! Boop!</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Beep! Boop!</h1>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>Beep! Boop!</h1>
+      </div>
 
       <form id="beepboop" class="form-control" action="index.html" method="post">
-        <label for="beepboop">Your Number</label>
-        <input id="userInput" type="number" name="beepboop" value="" required>
-        <button type="submit" name="button">Boop Me!</button>
-        <button id="redo" type="button" name="button">Do It Again!</button>
+        <div class="input-row">
+          <label for="beepboop">Your Number</label>
+          <input id="userInput" type="number" name="beepboop" value="" required>
+        </div>
+        <div class="button-row">
+          <button class="btn-primary" type="submit" name="button">Boop Me!</button>
+          <button id="redo" class="btn-info" type="button" name="button">Do It Again!</button>
+        </div>
       </form>
 
       <div class="output well">
