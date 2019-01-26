@@ -10,18 +10,20 @@ function getNumber(userInput) {
   }
   return nums;
 };
-
 // *TRANSFORMS NUMBERS: 1 = BEEP, 2 = BOOP, 3 = I'M SORRY DAVE
 function beepboop(userInput) {
   var nums = getNumber(userInput);
-  var name = function getName(userName) {
+  // var userName = "Tracy"
+  console.log(userName);
+  debugger;
+  function getName(userName) {
     if (userName !== "") {
-      name = userName;
-    } else {
-      name = "Dave";
-    }
+        return name = userName;
+      } else {
+        return name = "Dave";
+      }
     return name;
-  };
+    };
   // debugger;
   var transformNums = nums.map(function(num) {
     if (num.includes("3")) {
@@ -47,7 +49,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userInput = parseInt($("input#userInput").val());
-    var userName = $("input#userName").val();
+    var userName = $("#userName").val();
     var output = beepboop(userInput);
     console.log(output);
     // var output = "text goes here";
