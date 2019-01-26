@@ -6,11 +6,11 @@
 
 ## Description
 
-Takes a number and returns 'beep', 'boop', or 'I'm sorry Dave, I can't do that.'
+Takes a number and returns 'beep' in place of numbers containing 1, 'boop' in place of numbers containing 2, and 'I'm sorry Dave, I can't do that.' in place of numbers containing 3.
 
 ### Learning Objective
 
-Arrays and loops.
+Arrays, loops, if else statements.
 
 ### Specs
 
