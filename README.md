@@ -23,10 +23,10 @@ Where number contains "1", replace entire number with "Beep!" | "11" | "Beep!"
 Where number contains "2", replace entire number with "Boop!" | "22" | "Boop!"
 Where number contains "3", replace entire number with ""I'm sorry, Dave. I'm afraid I can't do that." | "33" | "I'm sorry, Dave. I'm afraid I can't do that."
 Higher numbered rules take precedence over lower numbered rules | "13" | "I'm sorry, Dave. I'm afraid I can't do that."
-.  | "12" | "Boop!"
-.  | "23" | "I'm sorry, Dave. I'm afraid I can't do that."
+. | "12" | "Boop!"
+. | "23" | "I'm sorry, Dave. I'm afraid I can't do that."
 When the user enters a new number, the application will replace the current result with new results | **Current:** "4" | "0, Beep!, Boop!, 3, 4"
-.  | **New:** "3" | "0, Beep!, Boop!, 3"
+. | **New:** "3" | "0, Beep!, Boop!, 3"
 
 
 ### Stretch Goals
