@@ -11,7 +11,7 @@ function getNumber(userInput) {
   return nums;
 };
 
-// * ATTEMPT TO REPLACE 'DAVE' WITH USER NAME -- NEEDS WORK
+// * REPLACE 'DAVE' WITH USER NAME
 function replaceName(userName) {
   // var name;
   if (userName !== "") {
