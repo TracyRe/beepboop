@@ -12,22 +12,21 @@ function getNumber(userInput) {
 };
 
 // * ATTEMPT TO REPLACE 'DAVE' WITH USER NAME -- NEEDS WORK
-// function replaceName(userName) {
-//   // var name;
-//   if (userName !== "") {
-//     return name = userName;
-//   } else {
-//     return name = "Dave";
-//   }
-// };
+function replaceName(userName) {
+  // var name;
+  if (userName !== "") {
+    return userName;
+  } else {
+    return "Dave";
+  }
+};
 
 // *TRANSFORMS NUMBERS: 1 = BEEP, 2 = BOOP, 3 = I'M SORRY DAVE
-function beepboop(userInput) {
+function beepboop(userInput, name) {
   var nums = getNumber(userInput);
   // console.log(userName);
   // debugger;
   var transformNums = nums.map(function(num) {
-    name = "Dave"
     if (num.includes("3")) {
       num = " I'm sorry, " + name + ". I'm afraid I can't do that.";
     } else if (num.includes("2")) {
@@ -51,13 +50,15 @@ $(document).ready(function() {
     var userName = $("#userName").val();
     console.log(userName);
 
-    var output = beepboop(userInput);
+    var name = replaceName(userName);
+    var output = beepboop(userInput, name);
     console.log(output);
     $("p.result").text(output);
   });
 
   $("button#redo").click(function(){
     $("input#userInput").val("");
+    $("input#userName").val("");
     $(".result").text("");
   });
 });
